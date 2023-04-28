@@ -1,0 +1,17 @@
+h1{
+    color: rgb(255, 255, 255);
+}
+form{  
+    text-align: center;
+    background: linear-gradient(rgba(76, 4, 76, 0.267), rgb(240, 5, 123));
+}
+ html{
+    height: 60%;
+    background: rgb(92, 38, 92);
+    display: grid; 
+ }
+ p{
+    color: rgb(255, 255, 255);
+ }
+
+
