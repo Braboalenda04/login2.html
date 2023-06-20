@@ -4,12 +4,11 @@ function Validar(){
     let nome = document.getElementById('nome').value;
     let telefone = document.getElementById('telefone').value;
    
-   
     if(!email || !senha || !nome || !telefone ){
         alert("Campos de preenchimento obrigatório.Favor preencher");
-    }else{
+    }else
         alert("Campos preenchido com sucesso!");
-    }
+    
 } 
 let Datadanascimento = document.getElementById('Datadenascimento').value;
 let CPF = document.getElementById('CPF').value;

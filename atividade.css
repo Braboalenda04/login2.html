@@ -1,5 +1,5 @@
 h1{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 150, 225);
 }
 form{  
     text-align: center;
@@ -11,7 +11,7 @@ form{
     display: grid; 
  }
  p{
-    color: rgb(255, 255, 255);
+    color: rgb(230, 233, 248);
  }
 
 
