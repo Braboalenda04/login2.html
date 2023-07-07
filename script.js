@@ -1,26 +1,59 @@
-function Validar(){
-    let email=document.getElementById('email').value;
-    let senha = document.getElementById('senha').value;
-    let nome = document.getElementById('nome').value;
-    let telefone = document.getElementById('telefone').value;
-   
-    if(!email || !senha || !nome || !telefone ){
-        alert("Campos de preenchimento obrigatório.Favor preencher");
-    }else
-        alert("Campos preenchido com sucesso!");
-    
-} 
-let Datadanascimento = document.getElementById('Datadenascimento').value;
-let CPF = document.getElementById('CPF').value;
-let Rua = document.getElementById('Rua').value;
-let Cidade= document.getElementById('Cidade').value;
-let Endereço = document.getElementById('Endereço').value;
-let CEP = document.getElementById('CEP').value;
-let Numerodacasa = document.getElementById('Numerodacasa').value;
-let Estado = document.getElementById('Estado').value;
+/*
 
-if(!Datadanascimento || !CPF || !Rua || !Cidade || !Endereço || !Numerodacasa || !Estado){
-    alert("Campos de preenchimento obrigatório.Por favor preencher");
-}else{
-    alert("Campos preenchido com sucesso!");
+Codigo de validação de formulario de login
+
+*/
+
+function Validar(){
+
+    let email = document.getElementById('email').value;
+ 
+    let password = document.getElementById('subject').value;
+ 
+    if(!email || !password){
+ 
+     alert("Campos de preenchimento obrigatorio.favor preencher");
+ 
+    }
+ 
+    else{
+ 
+        window.location.href = "aula2.html";
+ 
+    }
+ 
+ 
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ //CRIA A LISTA DE USUÁRIO
+
+ var dadosLista = [];
+
+ function salvarUSer(){
+    let nomeUser = document.getElementById("nomeUser").value;
+
+    if(nomeUser){
+        dadosLista.push(nomeUser);  
+        criaLista(); 
+        document.getElementById("nomeUser").value = '';  
+
+ }else{
+    alert("Usuário, por favor preencher o campo nome")
+ }
+}
+
+// FUNÇÃO PARA CRIAÇÃO DE LISTA NA TABELA
+function criaLista(){
+    let tabela = document.getElementById('tabela').innerHTML = '<tr><th>Nome Usuário</th><th>Ações</th></tr>';
+    // LAÇO DE REPETIÇÃO PARA COLOCAR NOMES NA TABELA
+for(let i=0;i<= (dadosLista.length-1);i++){
+    tabela += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-success'onclick=''>Editar</button><button<button class='btn btn-success'onclick=''>Excluir</button><button></td></tr>";
+    document.getElementById("tabela").innerHTML = tabela;
+}
+
 }
