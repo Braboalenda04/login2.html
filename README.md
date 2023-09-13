@@ -5,6 +5,6 @@ Nesse projeto entendemos como utilizar javascript para
 redirecionar página html bem como compreendemos a
 utilização de laços de repetição utilizado for, também
 com a mesma linguagem.
+ 
 
-# Progeto - excluir e editar
-![imagem info](img/Imag.png)  
+ ![imagem info](img/IMAG2.png) 
